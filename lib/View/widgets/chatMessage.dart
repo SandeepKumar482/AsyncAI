@@ -32,7 +32,7 @@ class ChatMessage extends StatelessWidget {
               ? AspectRatio(
             aspectRatio: 16 / 9,
             child: Image.network(
-              text,
+             text,
               loadingBuilder: (context, child, loadingProgress) =>
               loadingProgress == null
                   ? child

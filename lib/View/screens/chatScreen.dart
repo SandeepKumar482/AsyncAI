@@ -26,7 +26,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
     chatGPT = OpenAI.instance.build(
-        token: "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",
+        token: "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",
         baseOption: HttpSetup(receiveTimeout: 60000),isLogger: true);
     super.initState();
 
@@ -105,12 +105,12 @@ class _ChatScreenState extends State<ChatScreen> {
                 _sendMessage();
               },
             ),
-            TextButton(
-                onPressed: () {
-                  _isImageSearch = true;
-                  _sendMessage();
-                },
-                child: const Text("Generate Image"))
+            // TextButton(
+            //     onPressed: () {
+            //       _isImageSearch = true;
+            //       _sendMessage();
+            //     },
+            //     child: const Text("Generate Image"))
           ],
         ),
       ],
